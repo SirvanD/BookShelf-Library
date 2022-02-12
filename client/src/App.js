@@ -6,7 +6,6 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
-import Map from "./GoogleMapsComponent";
 import { UserContext } from "./UserContext";
 
 const Item = styled(Paper)(({ theme }) => ({
