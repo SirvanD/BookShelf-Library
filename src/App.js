@@ -61,15 +61,10 @@ export default function App() {
                 <NavBar />
               </Item>
             </Grid>
-            <Grid item xs={4} pl={0} pt={0} ml={0}>
+
+            <Grid item xs={12} pr={1} pl={0} pt={0} ml={0}>
               <Item>
                 <SideBar />
-              </Item>
-            </Grid>
-            <Grid item xs={8} pr={1}>
-              <Item>
-                {" "}
-                <Map />
               </Item>
             </Grid>
             <Grid
