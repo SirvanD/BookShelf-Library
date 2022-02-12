@@ -32,7 +32,7 @@ export default function BookCard({ bookData, isBorrowedByUser }) {
   };
 
   return (
-    <Grid item xs={6} md={3} lg={1}>
+    <Grid item xs={4} md={3} lg={1}>
       <Item>
         <Card sx={{ maxWidth: 400, minWidth: 150, margin: 1 }}>
           <CardMedia
