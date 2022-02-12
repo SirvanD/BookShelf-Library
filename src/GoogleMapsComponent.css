@@ -1,0 +1,9 @@
+.main-container {
+  width: 100%;
+  border: 2px solid rgb(196, 25, 25);
+}
+
+.map-wrapper {
+  width: 100%;
+  border: 2px solid black;
+}
