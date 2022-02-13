@@ -13,7 +13,7 @@ import Typography from "@mui/material/Typography";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import DonateBookModal from "./DonateBookModal";
-import { UserContext } from "./../UserContext";
+import { UserContext } from "../UserContext";
 import { useContext } from "react";
 
 const Search = styled("div")(({ theme }) => ({

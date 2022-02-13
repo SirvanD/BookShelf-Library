@@ -10,14 +10,6 @@ import AccountModal from "./AccountModal";
 export default function ButtonAppBar() {
   const [isUserLoggedIn, setIsUserLoggedIn] = React.useState(false);
 
-  const handleLoginClick = () => {
-    setIsUserLoggedIn(true);
-  };
-
-  const handleLogoutClick = () => {
-    setIsUserLoggedIn(false);
-  };
-
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" style={{ background: "#f1f5ff" }}>
