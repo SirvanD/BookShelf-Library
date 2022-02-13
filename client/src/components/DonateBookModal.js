@@ -28,10 +28,6 @@ const style = {
 };
 
 function ChildModal(props) {
-  const [apiKey, setApiKey] = useState(
-    "AIzaSyCqi37mzRrzkBrDZDb0BX9_IarX5iMOT88"
-  );
-
   const [open, setOpen] = React.useState(false);
   const [donateTitle, setDonateTitle] = useState("");
   const [donateAuthor, setDonateAuthor] = useState("");
@@ -51,7 +47,7 @@ function ChildModal(props) {
 
     await axios
       .get(
-        `https://www.googleapis.com/books/v1/volumes?q=intitle:${props.bookTitle}+inauthor:${props.bookAuthor}&key=${apiKey}&maxResults=1`
+        `https://www.googleapis.com/books/v1/volumes?q=intitle:${props.bookTitle}+inauthor:${props.bookAuthor}&key=${process.env.REACT_APP_GOOGLE_BOOKS_API_KEY}&maxResults=1`
       )
       .then((data) => {
         setDonateTitle(data.data.items[0]?.volumeInfo.title);
