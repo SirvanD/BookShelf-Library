@@ -72,7 +72,12 @@ export default function App() {
               justifyContent="center"
               alignItems="flex-end"
             >
-              <Item>&copy; 2022 Group Project at GA</Item>
+              <Item>
+                &copy; 2022 by Sirvan Doukchi{" "}
+                <a href="https://www.sirvan.dev" target="_blank">
+                  www.sirvan.dev
+                </a>
+              </Item>
             </Grid>
           </Grid>
         </Box>
