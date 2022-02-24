@@ -13,13 +13,12 @@ const Item = styled(Paper)(({ theme }) => ({
   padding: theme.spacing(0),
   margin: theme.spacing(0),
   marginTop: theme.spacing(1),
-  // textAlign: "center",
   color: theme.palette.text.secondary,
 }));
 export default function App() {
   const [userInfo, setUserInfo] = useState();
   const [bookStore, setBookStore] = useState([]);
-  // creating a state for storing info what we're gonna use in our context
+  // creating a state for storing info
 
   React.useEffect(() => {
     const userId = localStorage.getItem("userId");

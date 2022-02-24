@@ -47,27 +47,6 @@ export default function LoginForm() {
     setUser(currentUser);
   });
 
-  // React.useEffect(() => {
-  //   setIsUserLoggedIn(!!userContext.userInfo);
-  //   if (userContext.userInfo) setUserName(userContext.userInfo.fullname);
-  // }, [userContext]);
-
-  // const handleLoginClick = () => {
-  //   axios
-  //     .get("./users/details", { params: { userEmail, userPassword } })
-  //     .then((res) => {
-  //       const info = res.data?.user;
-  //       userContext.setUserInfo(info);
-  //     });
-  // };
-
-  // const handleLogoutClick = () => {
-  //   setIsUserLoggedIn(false);
-  //   userContext.setUserInfo("");
-  // };
-
-  //google sign in
-
   const login = async () => {
     try {
       const user = await signInWithEmailAndPassword(
@@ -162,18 +141,6 @@ export default function LoginForm() {
                       marginTop: 13,
                     }}
                   />
-
-                  {/* <Button
-                onClick={handleLogoutClick}
-                endIcon={<Logout />}
-                style={{
-                  background: "#ffa722",
-                  color: "white",
-                  marginRight: 30,
-                }}
-              >
-                Logout
-              </Button> */}
 
                   <Button
                     onClick={login}

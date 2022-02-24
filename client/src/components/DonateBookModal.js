@@ -42,7 +42,6 @@ function ChildModal(props) {
   const { bookStore, setBookStore } = React.useContext(UserContext);
 
   const handleOpen = async (e) => {
-    // https://www.googleapis.com/books/v1/volumes?q=intitle:flowers+inauthor:keyes&key=AIzaSyDmkfSjnnPP6Zl7m0MkrTDQZEjOP0g8y4A&maxResults=1
     e.preventDefault();
 
     await axios

@@ -4,7 +4,7 @@ const UserModel = require("../db/user.schema");
 
 class User {
   constructor() {
-    (this.fullname = ""), (this.email = ""), (this.address = ""), (this.latlng = { lat: 0, lng: 0 }), (this.password = "");
+    (this.fullname = ""), (this.email = ""), (this.password = "");
   }
 }
 
