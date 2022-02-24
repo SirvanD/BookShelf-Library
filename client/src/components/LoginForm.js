@@ -1,14 +1,16 @@
+import { Button } from "@mui/material";
+import { useState } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
-import TextField from "@mui/material/TextField";
-import { Button } from "@mui/material";
-import Login from "@mui/icons-material/Login";
-import Typography from "@mui/material/Typography";
-import { useState } from "react";
-import { UserContext } from "../UserContext";
-import Modal from "@mui/material/Modal";
 import FormControl from "@mui/material/FormControl";
+import Login from "@mui/icons-material/Login";
+import Modal from "@mui/material/Modal";
 import RegIcon from "@mui/icons-material/HowToReg";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
+
+import { UserContext } from "../UserContext";
+
 import {
   signInWithEmailAndPassword,
   onAuthStateChanged,

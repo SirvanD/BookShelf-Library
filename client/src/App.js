@@ -1,12 +1,14 @@
-import React, { useState } from "react";
-import "./App.css";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Paper from "@mui/material/Paper";
+import React, { useState } from "react";
+
+import { UserContext } from "./UserContext";
 import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
-import { UserContext } from "./UserContext";
+
+import "./App.css";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,

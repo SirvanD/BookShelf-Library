@@ -1,14 +1,15 @@
+import { GoogleLoginButton } from "react-social-login-buttons";
+import { useState } from "react";
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import FormControl from "@mui/material/FormControl";
 import LogoutIcon from "@mui/icons-material/Logout";
-import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
 import RegIcon from "@mui/icons-material/HowToReg";
-import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
-import { useState } from "react";
-import { GoogleLoginButton } from "react-social-login-buttons";
+import Typography from "@mui/material/Typography";
+
 import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,

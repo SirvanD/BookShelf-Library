@@ -1,13 +1,14 @@
+import { Container } from "@mui/material";
 import * as React from "react";
+import axios from "axios";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-import Modal from "@mui/material/Modal";
-import { Container } from "@mui/material";
-import FormControl from "@mui/material/FormControl";
 import CardMedia from "@mui/material/CardMedia";
+import FormControl from "@mui/material/FormControl";
+import Modal from "@mui/material/Modal";
 import TextField from "@mui/material/TextField";
-import axios from "axios";
+import Typography from "@mui/material/Typography";
+
 import { UserContext } from "../UserContext";
 
 const style = {

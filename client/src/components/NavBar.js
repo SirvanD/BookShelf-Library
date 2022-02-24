@@ -3,9 +3,9 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+
 import LoginForm from "./LoginForm";
 import SignupModal from "./SignupModal";
-import AccountModal from "./AccountModal";
 
 export default function ButtonAppBar() {
   const [isUserLoggedIn, setIsUserLoggedIn] = React.useState(false);
@@ -23,7 +23,6 @@ export default function ButtonAppBar() {
 
           {isUserLoggedIn ? <></> : <SignupModal />}
 
-          {isUserLoggedIn ? <AccountModal /> : <></>}
           {isUserLoggedIn ? (
             <Typography
               variant="h7"
