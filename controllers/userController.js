@@ -1,9 +1,9 @@
 const users = require("../model/users");
 
-//GET all users
+//GET user detail for profile update
 exports.user_list_get = function (req, res) {
   res.send(users.get_user_details());
-  //   res.send("User List");
+  //   res.send("User detail");
 };
 
 //GET all users
